@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Fraud Detection Lab</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+        <body>
+
+            <h1>Fraud Detection Simulator</h1>
+
+            <form action="/predict" method="post">
+
+            <h3>Select Credit Card</h3>
+
+            <select name="card">
+
+            <option value="clean_card">Clean Card</option>
+            <option value="stolen_card">Stolen Card</option>
+
+            </select>
+
+            <br><br>
+
+            <h3>Select Machine Learning Model</h3>
+
+            <select name="model">
+
+            <option value="svm">Support Vector Machine</option>
+            <option value="random_forest">Random Forest</option>
+            <option value="gradient_boost">Gradient Boosting</option>
+            <option value="CS-SVM">Cost-Sensitive SVM</option>
+
+            </select>
+
+            <br><br>
+
+            <button type="submit">Make Purchase</button>
+
+            </form>
+
+        </body>
+</html>
